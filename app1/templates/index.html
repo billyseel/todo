@@ -28,13 +28,13 @@
     <br>
     <div class="container text-center">
         <div class="row">
-            <div class="col col-lg-10">
-                <form method="POST" action="">
-                    {% csrf_token %}
-                    {{form.title}}
+            <div class="col-lg-10">
+                <div>
+                    <form class="col-lg-12" method="POST" action="">
+                        {% csrf_token %}
+                        {{form.title}}
 
-                    {% comment %} <input class="btn btn-secondary" type="Submit" name="Create Task"> {% endcomment %}
-
+                </div>
             </div>
             <div class="col col-lg-2">
                 <div class="d-grid gap-2">
@@ -53,7 +53,7 @@
             <div class="col col-lg-8">
                 {% if task.complete == True %}
 
-                <label> {{task}} ---->> Completed </label>
+                <label><strong> {{task}} ---->> Completed </strong></label>
 
                 {% else %}
                 <span>{{task}}</span>
