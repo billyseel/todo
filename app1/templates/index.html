@@ -32,13 +32,16 @@
                     {% csrf_token %}
                     {{form.title}}
                     
-                </form>
+                {% comment %} <input class="btn btn-secondary" type="Submit" name="Create Task"> {% endcomment %}
+                
             </div>
             <div class="col col-lg-2">
                 <div class="d-grid gap-2">
 
                     <input class="btn btn-secondary" type="Submit" name="Create Task">
+                
                 </div>
+                </form>
             </div>
         </div>
     </div>
