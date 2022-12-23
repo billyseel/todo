@@ -5,10 +5,8 @@ from . models import *
 
 class TaskForm(forms.ModelForm):
     title = forms.CharField(widget=forms.TextInput(
-    ))
+        attrs={'placeholder': 'Add a new Task here ...'}))
 
     class Meta:
         model = Task
         fields = '__all__'
-
-# attrs={'placeholder': 'Add a new Task here ...'}
