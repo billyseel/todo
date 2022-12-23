@@ -23,29 +23,28 @@
 <body class="bg-info p-3">
     <br>
     <div class="container text-center">
-        <h1><em>To Do List</em></h1>
+        <h1><em>My To Do List</em></h1>
     </div>
     <br>
     <div class="container text-center">
-        <div class="center-column">
-            <!-- <div class="col col-lg-10"> -->
-            <div>
-                <form method="POST" action="">
-                    {% csrf_token %}
-                    {{form.title}}
+        <div class="row">
+            <div class="col col-lg-10">
+                <div>
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        {{form.title}}
 
+                </div>
+            </div>
+            <div class="col col-lg-2">
+                <div class="d-grid gap-2">
+
+                    <input class="btn btn-secondary" type="Submit" name="Create Task">
+
+                </div>
+                </form>
             </div>
         </div>
-        <!-- <div class="col col-lg-2"> -->
-        <div class="center-column">
-            <div class="d-grid gap-2">
-
-                <input class="btn btn-secondary" type="Submit" name="Create Task">
-
-            </div>
-            </form>
-        </div>
-    </div>
     </div>
     <br>
     {% for task in tasks %}
