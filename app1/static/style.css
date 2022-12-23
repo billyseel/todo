@@ -1,10 +1,14 @@
 body {
     background-color: rgb(196, 232, 221);
+    border-color: black;
+
+
 }
 
 h1 {
     text-shadow: 10px;
     text-shadow: rgb(195, 70, 70);
+    text-decoration-color: rgb(223, 214, 214);
 }
 
 input {
