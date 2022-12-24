@@ -23,21 +23,24 @@
 <body class="bg-info p-3">
     <br>
     <div class="container text-center">
-        <h1><em>My To Do List</em></h1>
+        <h1><em>To Do List</em></h1>
     </div>
     <br>
     <div class="container text-center">
         <div class="row">
-            <div class="placeholder col-12">
+            <div class="col col-lg-2">
                 <div>
-                    <span>
-                        <form method="POST" action="">
-                            {% csrf_token %}
-                            {{form.title}}
-                    </span>
+                    <h5></h5>
                 </div>
             </div>
-            <div class="col col-lg-12">
+            <div class="col col-lg-4">
+                <div>
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        {{form.title}}
+                </div>
+            </div>
+            <div class="col col-lg-4">
                 <div class="d-grid gap-2">
 
                     <input class="btn btn-secondary" type="Submit" name="Create Task">
